@@ -1,7 +1,18 @@
 package com.buildabout.backendba.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
     private String firstName;
@@ -16,14 +27,11 @@ public class User {
 
     private int age;
 
-    //private List<VirtualObject>
-    //private List<PhysicalObject>
-    //private List<VirtualTool>
-    //private List<PhysicalTool>
+    public User() {
 
+    }
 
-    public User(Long id, String firstName, String lastName, String username, String email, String phoneNumber, int age) {
-        this.id = id;
+    public User(String firstName, String lastName, String username, String email, String phoneNumber, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
