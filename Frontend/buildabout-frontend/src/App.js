@@ -1,16 +1,21 @@
-import React from 'react';
-import UserHomePage from './components/user-hompage'
-import './App.css';
+import React from "react";
+import Home from "./pages/home-page/home-page";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Blah blah
-        </p>
-      </header>
-      <UserHomePage></UserHomePage>
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <header className="App-header"></header>
+      <div className="main">
+        <Home></Home>
+      </div>
     </div>
   );
 }
