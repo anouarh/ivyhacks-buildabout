@@ -1,2 +1,2 @@
 # ivyhacks-buildabout
-Buildabout is a tool for parents to encourage independance, resourcefulness, and planning through personal projects.
+Buildabout is a tool for parents to encourage independance, resourcefulness, and planning through personal projects. Built by four students during the Ivyhacks hackathon, Buildabout seeks to get kids off the screen and into the building mindset. Every household good is bought new and thrown away when it breaks. A hundred years ago, when your car broke down, the first thing you would do is open the hood and try to fix it yourself. While technological advances have brought many benefits to people around the world, building and repairing the objects you interact good for learning, and great for the environment. 
