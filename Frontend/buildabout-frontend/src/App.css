@@ -6,6 +6,50 @@
     position: fixed;
     top: 0px;
     left: 0px;
+    overflow:visible;
+    
+
+}
+
+.WidePageTemplate{
+    left: 5%;
+    top: 6%;
+    background-color: #FFF;
+    width: 90%;
+    position: absolute;
+    max-height: 90vh;
+    min-height: 85vh;
+    border: 2px solid black;
+    border-radius: 45px;
+
+
+}
+
+.TopLine{
+    border-bottom: 2px solid black;
+    width: 90%;
+    top: 6rem;
+    position: relative;
+    margin: 0 auto;
+
+
+}
+
+.SideBar{
+    width: 12rem;
+    min-height: 30rem;
+    position: absolute;
+    left: -3%;
+    top: -5%
+    
+
+
+
+}
+
+.ButtonLabel-sm{
+    width: 16rem;;
+    height: 6rem;
 
 }
 
