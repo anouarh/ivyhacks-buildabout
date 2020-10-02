@@ -18,7 +18,7 @@ After multiple brainstorming sessions, we came up with a couple of uml diagrams 
 
 Class Diagram             |  Use Case Diagram
 :-------------------------:|:-------------------------:
-![class-diagram](class-diagram.png)  |  ![usecase-diagram](usecase-diagram.png)
+![class-diagram](./assets/class-diagram.png)  |  ![usecase-diagram](./assets/usecase-diagram.png)
 
 
 ### Architecture
