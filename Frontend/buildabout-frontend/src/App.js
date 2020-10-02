@@ -1,38 +1,35 @@
-import React from "react";
-import UserHomePage from "./components/user-hompage";
-import WidePageTemplate from "./components/widepagetemplate";
-import ButtonLabel from "./components/buttonlabels";
+import React, { Component } from "react";
 import "./App.css";
-import toolboxlogo from "./images/cartoontools@2x.png";
+import { BrowserRouter } from "react-router-dom";
+import Home from "./pages/home/home-page";
+import "wired-elements";
 
-function Welcome(props) {
-  return (
-    <div id="parent">
-      <h1> Hello, {props.name} </h1>
-      <p> Hope everything is {props.state} </p>
-    </div>
-  );
-}
-
-function WhatMaterials() {
-  return (
-    <div className="MaterialPrompt">
-      <div className="MaterialPromptLogo">
-        <img src={toolboxlogo} alt="toolbox logo" />
-      </div>
-      <div className="MaterialPromptLine"></div>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div className="App">
-      <WidePageTemplate>
-        <ButtonLabel buttonSize="sm"> </ButtonLabel>
-      </WidePageTemplate>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <wired-card fill="white">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/help">Help</a>
+              </li>
+              <li>
+                <a href="/safety">Safety</a>
+              </li>
+              <li>
+                <a href="/projects">Projects</a>
+              </li>
+            </ul>
+            <Home></Home>
+          </wired-card>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
