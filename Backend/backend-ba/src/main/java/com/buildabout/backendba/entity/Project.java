@@ -1,17 +1,44 @@
 package com.buildabout.backendba.entity;
 
-public abstract class Project {
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+public class Project {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String name;
 
     private String description;
 
-    private String rating;
+    @Enumerated(EnumType.STRING)
+    private Type type;
 
-    public Project(String name, String description, String rating) {
+    @Enumerated(EnumType.STRING)
+    private Rating rating;
+
+    @ManyToMany(mappedBy = "projects")
+    private List<Tool> tools;
+
+    @ManyToMany(mappedBy = "projects")
+    private List<Material> materials;
+
+    public Project(String name, String description, Type type, Rating rating) {
         this.name = name;
         this.description = description;
+        this.type = type;
         this.rating = rating;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -30,11 +57,35 @@ public abstract class Project {
         this.description = description;
     }
 
-    public String getRating() {
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public Rating getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(Rating rating) {
         this.rating = rating;
+    }
+
+    public List<Tool> getTools() {
+        return tools;
+    }
+
+    public void setTools(List<Tool> tools) {
+        this.tools = tools;
+    }
+
+    public List<Material> getMaterials() {
+        return materials;
+    }
+
+    public void setMaterials(List<Material> materials) {
+        this.materials = materials;
     }
 }
