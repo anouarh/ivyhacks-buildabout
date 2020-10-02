@@ -16,8 +16,10 @@ After multiple brainstorming sessions, we came up with a couple of uml diagrams 
 
 ### UML Models
 
-![class-diagram](class-diagram.png =100x)
-![usecase-diagram](usecase-diagram.png =100x)
+Class Diagram             |  Use Case Diagram
+:-------------------------:|:-------------------------:
+![class-diagram](class-diagram.png)  |  ![usecase-diagram](usecase-diagram.png)
+
 
 ### Architecture
 
