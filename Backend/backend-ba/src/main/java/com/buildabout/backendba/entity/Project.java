@@ -1,9 +1,14 @@
 package com.buildabout.backendba.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Project {
 
     @Id
@@ -21,16 +26,37 @@ public class Project {
     private Rating rating;
 
     @ManyToMany(mappedBy = "projects")
-    private List<Tool> tools;
+    @JsonIgnore
+    private Set<Tool> tools;
 
-    @ManyToMany(mappedBy = "projects")
-    private List<Material> materials;
+    @ManyToMany(mappedBy = "projectsMaterial")
+    @JsonIgnore
+    private Set<Material> materials;
 
-    public Project(String name, String description, Type type, Rating rating) {
+    @ManyToOne
+    @JoinColumn(name = "user", nullable=false)
+    private User user;
+
+    public Project() {
+    }
+
+    public Project(String name, String description, Type type, Rating rating,
+                   Set<Tool> tools, Set<Material> materials, User user) {
         this.name = name;
         this.description = description;
         this.type = type;
         this.rating = rating;
+        this.tools = tools;
+        this.materials = materials;
+        this.user = user;
+    }
+
+    public Project(String name, String description, Type type, Rating rating, User user) {
+        this.name = name;
+        this.description = description;
+        this.type = type;
+        this.rating = rating;
+        this.user = user;
     }
 
     public Long getId() {
@@ -73,19 +99,27 @@ public class Project {
         this.rating = rating;
     }
 
-    public List<Tool> getTools() {
+    public Set<Tool> getTools() {
         return tools;
     }
 
-    public void setTools(List<Tool> tools) {
+    public void setTools(Set<Tool> tools) {
         this.tools = tools;
     }
 
-    public List<Material> getMaterials() {
+    public Set<Material> getMaterials() {
         return materials;
     }
 
-    public void setMaterials(List<Material> materials) {
+    public void setMaterials(Set<Material> materials) {
         this.materials = materials;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

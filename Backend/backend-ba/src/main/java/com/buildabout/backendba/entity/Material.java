@@ -1,9 +1,14 @@
 package com.buildabout.backendba.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Material {
 
     @Id
@@ -22,7 +27,11 @@ public class Material {
             name = "project_material",
             joinColumns = @JoinColumn(name = "material_id"),
             inverseJoinColumns = @JoinColumn(name = "project_id"))
-    private List<Project> projects;
+    @JsonIgnore
+    private Set<Project> projectsMaterial;
+
+    public Material() {
+    }
 
     public Material(String name, String description, Type type) {
         this.name = name;
@@ -62,11 +71,13 @@ public class Material {
         this.type = type;
     }
 
-    public List<Project> getProjects() {
-        return projects;
+    public Set<Project> getProjectsMaterial() {
+        return projectsMaterial;
     }
 
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
+    public void setProjectsMaterial(Set<Project> projectsMaterial) {
+        this.projectsMaterial = projectsMaterial;
     }
+
+
 }

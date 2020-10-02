@@ -1,11 +1,11 @@
 package com.buildabout.backendba.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -26,6 +26,10 @@ public class User {
     private String phoneNumber;
 
     private int age;
+
+    @OneToMany(mappedBy="user")
+    @JsonIgnore
+    private List<Project> projects;
 
     public User() {
 
@@ -94,5 +98,13 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
     }
 }

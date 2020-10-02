@@ -11,6 +11,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 @SpringBootApplication
 public class BackendBaApplication {
 
@@ -33,21 +38,23 @@ public class BackendBaApplication {
 		SpringApplication.run(BackendBaApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	CommandLineRunner runner(){
 		return args -> {
-			userRepository.save(new User("Tyreek", "Hill", "thill",
-					"thill@gmail.com", "+15558739", 25));
+			User user1 = new User("Tyreek", "Hill", "thill",
+					"thill@gmail.com", "+15558739", 25);
+			userRepository.save(user1);
 
 			toolRepository.save(new Tool("Hammer", "Used to hammer things...", Type.PHYSICAL));
 
 			Material material1 = new Material("Wood", "Blah Blah...", Type.PHYSICAL);
 			materialRepository.save(material1);
 
-			Project proj1 = new Project("Building a wood robot", "blah blah etc", Type.PHYSICAL, Rating.INTERMEDIATE );
+			Project proj1 = new Project("Building a wood robot", "blah blah etc",
+					Type.PHYSICAL, Rating.INTERMEDIATE, user1);
 			projectRepository.save(proj1);
 
 		};
-	}
+	}*/
 
 }
