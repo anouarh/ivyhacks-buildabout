@@ -17,3 +17,15 @@ def searchScore(projectDescriptions, tools_materials):
         score = score / len(tools_materials)
         scoreList.append(score)
     return scoreList
+
+if __name__ == "__main__":
+    p = []
+    tm = []
+    with open("proj.txt", "r") as readfile:
+        p =[line.strip() for line in readfile.read().split(";;;")]
+        p = list(filter(None, p))
+    with open("tm.txt", "r") as readfile:
+        tm =[line.strip() for line in readfile.read().split(";;;")]
+        tm = list(filter(None, tm))
+    ret = searchScore(p, tm)
+    print(ret)
