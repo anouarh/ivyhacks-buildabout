@@ -3,7 +3,6 @@
   flex-direction: row;
 }
 .tools {
-  border: 1px solid black;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
 }
 
 .materials {
-  border: 1px solid black;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -29,7 +27,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   flex: 1;
   margin: 10px;
+}
+
+.toolbox .generate-button {
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: #2a265f;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+.generate-button:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(rgba(255, 215, 97, 0.48));
+  background-color: #59568a;
+}
+
+.toolbox wired-button {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toolbox wired-button:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(rgba(255, 215, 97, 0.48));
 }
