@@ -33,7 +33,8 @@ function App() {
     return (
 	    <div className="App">
 	    <WidePageTemplate>
-	    <ButtonLabel buttonSize="sm"> </ButtonLabel>
+	    <ButtonLabel buttonSize="lg"> </ButtonLabel>
+	    <ButtonLabel buttonSize="md"> </ButtonLabel>
 	    </WidePageTemplate>
 
 	    </div>
