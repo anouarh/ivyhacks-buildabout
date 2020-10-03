@@ -15,14 +15,12 @@ class Container extends Component {
         <div className="Header">
           <div className="toolbox-image"> </div>
           <h1 className="Title"> Buildabout </h1>
-          
           <h2 className="Subtitle">
             Encouraging independance, resourcefulness, and planning through
             personal projects.
           </h2>
-
         </div>
-        
+
         <Route path="/" exact component={Home} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/account" exact component={Account} />

@@ -36,6 +36,7 @@
   font-size: 1.7rem;
   font-weight: 700;
   color: #000;
+  transition: all 0.3s ease-out;
 }
 
 .ButtonLabel-md {
@@ -53,6 +54,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #000;
+  transition: all 0.3s ease-out;
 }
 
 .ButtonLabel-sm {
@@ -64,6 +66,7 @@
   text-align: center;
   margin-left: 0.7rem;
   color: #000;
+  transition: all 0.3s ease-out;
 }
 
 .ButtonLabel-sm:hover {
@@ -93,8 +96,7 @@
   min-height: 88vh;
   border: 3px solid black;
   border-radius: 30px;
-  overflow-y:auto;
-
+  overflow-y: auto;
 }
 
 .TopLine {
@@ -135,5 +137,3 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
-

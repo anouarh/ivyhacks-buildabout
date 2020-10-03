@@ -24,7 +24,7 @@ class Home extends Component {
           </div>
           <div className="activity-card green">
             <h1>Play Date</h1>
-            <h4 className="faded">Build projects with other</h4>
+            <h4 className="faded">Build projects with others.</h4>
           </div>
         </div>
       </div>
