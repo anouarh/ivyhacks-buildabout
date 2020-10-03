@@ -12,12 +12,15 @@ class Container extends Component {
   render() {
     return (
       <div>
-        <div className="title">
-          <h1>BuildAbout</h1>
-          <h4>
+        <div className="Header">
+          <div className="toolbox-image"> </div>
+          <h1 className="Title"> Buildabout </h1>
+          
+          <h2 className="Subtitle">
             Encouraging independance, resourcefulness, and planning through
             personal projects.
-          </h4>
+          </h2>
+
         </div>
         
         <Route path="/" exact component={Home} />

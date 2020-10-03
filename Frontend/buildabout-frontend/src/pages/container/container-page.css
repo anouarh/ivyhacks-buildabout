@@ -1,4 +1,60 @@
-.title {
-  margin-bottom: 40px;
+@font-face {
+    font-family: Rubrik-SemiBold;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-SemiBold.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Regular;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Regular.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Light;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Light.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Medium;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
+}
+
+
+
+.Header {
+  margin-bottom: 2rem;
   text-align: center;
+  border-bottom: 2px black solid;
+  padding-bottom: 1rem;
+}
+
+.Title{
+	text-transform: uppercase;
+	font-size: 2.6rem;
+	margin-bottom: 1rem;
+	font: Rubrik-Medium;
+	font-weight: 600;
+
+
+}
+
+.Subtitle{
+  
+
+
+
+}
+
+.toolbox-image {
+	width: 6rem;
+  height: 6rem;
+  background-image: url("../../images/cartoontools@2x.png");
+  position: relative;
+  right: 3rem;
+  top: 0rem;
+  z-index: 99;
+  float: right;
+  background-size: contain;
+
+
+
 }

@@ -1,0 +1,146 @@
+
+.ParentsInner{
+
+}
+
+
+
+
+.ParentsHeaderMessage{
+
+	padding: 0 6rem;
+	font-family: Rubrik-Regular;
+	text-align: center;
+	font-size: 1.3rem;
+
+}
+
+.ValueButtons{
+	margin: 3rem 0;
+	font-size: 2.4rem;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+.ValueButton-Resourcefulness{
+	background-color: rgb(41,55,181);
+	padding: 1rem;
+	margin: 0 2rem 0 0;
+	-webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #FFF;
+    border-radius: 30px;
+    border: 3px solid black;
+
+
+}
+
+
+.ValueButton-Responsibility{
+	background-color: rgb(241,221,40);
+	padding: 1rem 2.5rem;
+	margin: 0 2rem;
+	-webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #FFF;
+    border-radius: 30px;
+    border: 3px solid black;
+	
+}
+
+
+.ValueButton-Independance{
+	background-color: rgb(249,33,33);
+	padding: 1rem 2.5rem;
+	margin: 0 2rem;
+	-webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #FFF;
+    border-radius: 30px;
+    border: 3px solid black;
+	
+}
+
+.HowitWorks{
+	width: 40%;
+	position: relative;
+	margin: 4rem 6rem;
+	display:inline-block;
+
+}
+
+.HowitWorksTitle{
+	border-bottom: 2px solid black;
+	padding-bottom: 0.6rem;
+	padding-left: 2rem;
+	font-size: 1.8rem;
+
+
+}
+
+.HowitWorksMsg{
+	margin: 1rem 0;
+
+}
+
+.EcotipsBox{
+	margin: 4rem 4rem;
+	display:inline-block;
+	float: right;
+	min-height: 6rem;
+	max-width: 12rem;
+	border-top: green solid 6px;
+	border: green solid 3px;
+	background-color: green;
+	color: #fff;
+	padding: 4rem;
+
+
+}
+
+.EcotipsMsg{
+
+
+}
+
+
+        

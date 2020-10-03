@@ -18,7 +18,11 @@
     src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
 }
 
+* {
+font-family: Rubrik-SemiBold, Rubrik-SemiBold, Rubrik-Medium;
 
+
+}
 
 
 body {
