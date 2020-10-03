@@ -1,0 +1,10 @@
+.item wired-card {
+    display: flex;
+    flex-direction: row;
+}
+
+wired-card wired-button {
+    flex: 1;
+    position: relative;
+    right: 0px;;
+}
