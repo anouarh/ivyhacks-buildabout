@@ -10,30 +10,50 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <wired-card fill="white">
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/help">Help</a>
-              </li>
-              <li>
-                <a href="/safety">Safety</a>
-              </li>
-              <li>
-                <a href="/projects">Projects</a>
-              </li>
-            </ul>
-            <div className="main">
-              <div className="nav-bar">
-                <NavBar></NavBar>
+          <div className="WidePageTemplate">
+
+              
+            <div className="SideBar">
+            <a href="/projects">
+              <div className="ButtonLabel-lg">
+              
+                <p className="ProjectsNavButton"> Projects </p>
+              
               </div>
-              <div className="home">
+              </a>
+              <a href="/parents">
+              <div className="ButtonLabel-md">
+                Parents
+              </div>
+              </a>
+              <a href="/safety">
+                  <div className="ButtonLabel-md">
+
+                Safety
+
+              </div>
+              </a>
+              <a href="/account">
+                  <div className="ButtonLabel-md">
+
+                Account
+
+              </div>
+              </a>
+              <a href="/help">
+              <div className="ButtonLabel-sm">
+
+             
+
+              </div>
+              </a>
+
+            </div>  
+              <div className="Home">
                 <Home></Home>
               </div>
-            </div>
-          </wired-card>
+          
+          </div>
         </div>
       </BrowserRouter>
     );

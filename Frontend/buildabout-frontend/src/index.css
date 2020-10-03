@@ -1,6 +1,29 @@
+@font-face {
+    font-family: Rubrik-SemiBold;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-SemiBold.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Regular;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Regular.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Light;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Light.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Medium;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
+}
+
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Rubrik-Regular,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,7 +31,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Rubrik-Regular,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 

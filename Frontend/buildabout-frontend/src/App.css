@@ -1,93 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
+@font-face {
+    font-family: Rubrik-SemiBold;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-SemiBold.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Regular;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Regular.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Light;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Light.woff);
+}
+
+@font-face {
+    font-family: Rubrik-Medium;
+    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
+}
+
+
+* {
+  margin: 0;
+  text-decoration:none;
+}
+
+
 .App {
   background-image: url("images/background@2x.png");
   background-size: cover;
   height: 100vh;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font: Rubrik-Regular;
+  font-size: 15px;
 }
 
-wired-card {
-  width: 80%;
-  height: 80%;
-}
-
-wired-card .main {
-  display: flex;
-  flex-direction: row;
-}
-
-wired-card .nav-bar {
-  width: 15%;
-}
-
-wired-card .home {
-  border: 1px solid black;
-  flex-grow: 1;
-}
-
-/*
-.App {
-  background-image: url("images/background@2x.png");
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  overflow: visible;
-}
-
-<<<<<<< HEAD
 .SideBar{
     width: 16rem;
     min-height: 30rem;
     position: absolute;
     left: -3%;
-    top: -5%
-    
-
+    top: -2%;
 
 
 }
 
+
+
 .ButtonLabel-lg{
-    width: 16rem;;
-    height: 8rem;
+    width: 12rem;
+    min-height: 3rem;
     background-image: url('images/Parentsbutton.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2.5rem 0;
+    line-height: 1rem;
+    font: Rubrik-Semibold;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:#000;
+
+
 
 }
 
 .ButtonLabel-md{
-    width: 13rem;;
-    height: 6.5rem;
+    width: 6rem;
+    height: 1rem;
     background-image: url('images/Parentsbutton.png');
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0.3rem;
     margin-bottom: 1rem;
-    pading-left: 2rem;
+    margin-left: 1rem;
+    padding: 2.5rem 2rem;
+    font: Rubrik-Semibold;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:#000;
+
 }    
 
+.ButtonLabel-sm{
+    height: 10rem;
+    background-image: url('images/HelpButton.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 0.7rem;
+    color:#000;
+
+}
+
  .WidePageTemplate {
-  left: 5%;
-  top: 6%;
+  left: 3%;
+  top: 5%;
   background-color: #fff;
-  width: 90%;
+  width: 93%;
   position: absolute;
   max-height: 90vh;
-  min-height: 85vh;
-  border: 2px solid black;
-  border-radius: 45px;
+  min-height: 88vh;
+  border: 3px solid black;
+  border-radius: 30px;
 }
 
 .TopLine {
@@ -100,10 +121,6 @@ wired-card .home {
 }
 
 
-.ButtonLabel-sm {
-  width: 16rem;
-  height: 6rem;
-}
 
 .MaterialPrompt {
   width: 50%;
@@ -126,4 +143,8 @@ wired-card .home {
 
 .MaterialPromptLogo img {
   max-height: 100%;
+}
+
+.Home{
+  padding: 4rem 4rem 4rem 12rem;
 }
