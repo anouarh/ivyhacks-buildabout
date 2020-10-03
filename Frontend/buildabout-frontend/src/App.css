@@ -14,11 +14,23 @@
   justify-content: center;
 }
 
-.App wired-card {
-  display: flex;
-  flex-direction: column;
+wired-card {
   width: 80%;
   height: 80%;
+}
+
+wired-card .main {
+  display: flex;
+  flex-direction: row;
+}
+
+wired-card .nav-bar {
+  width: 15%;
+}
+
+wired-card .home {
+  border: 1px solid black;
+  flex-grow: 1;
 }
 
 /*

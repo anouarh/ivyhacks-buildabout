@@ -1,0 +1,53 @@
+.navBar {
+}
+
+.first-custom-nav-button,
+.second-custom-nav-button,
+.third-custom-nav-button {
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: #ffd800;
+  height: 110px;
+  transform: rotate(7deg);
+  position: relative;
+  left: -36px;
+  margin-bottom: 30px;
+}
+
+.first-custom-nav-button {
+  transform: rotate(7deg);
+  position: relative;
+  left: -36px;
+}
+
+.second-custom-nav-button {
+  transform: rotate(-7deg);
+  position: relative;
+  left: -36px;
+}
+
+.third-custom-nav-button {
+  transform: rotate(3deg);
+  position: relative;
+  left: -36px;
+}
+
+.help-button {
+  transform: rotate(-7deg);
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black;
+}
+
+.inner-help-button {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 6px;
+    left: -45px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 90px solid #ffd800;
+  }
