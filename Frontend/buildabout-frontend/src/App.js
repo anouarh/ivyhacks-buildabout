@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./pages/home/home-page";
 import "wired-elements";
+import NavBar from "./components/nav-bar/nav-bar";
 
 class App extends Component {
   render() {
@@ -24,7 +25,14 @@ class App extends Component {
                 <a href="/projects">Projects</a>
               </li>
             </ul>
-            <Home></Home>
+            <div className="main">
+              <div className="nav-bar">
+                <NavBar></NavBar>
+              </div>
+              <div className="home">
+                <Home></Home>
+              </div>
+            </div>
           </wired-card>
         </div>
       </BrowserRouter>
