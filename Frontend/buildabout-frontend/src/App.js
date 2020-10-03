@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import Home from "./pages/home/home-page";
+import Container from "./pages/container/container-page";
 import "wired-elements";
+
 
 class App extends Component {
   render() {
@@ -30,7 +31,7 @@ class App extends Component {
               </a>
             </div>
             <div className="Home">
-              <Home></Home>
+              <Container></Container>
             </div>
           </div>
         </div>
