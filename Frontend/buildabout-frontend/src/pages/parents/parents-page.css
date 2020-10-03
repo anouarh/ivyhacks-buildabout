@@ -112,35 +112,53 @@
 	border-bottom: 2px solid black;
 	padding-bottom: 0.6rem;
 	padding-left: 2rem;
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 
 
 }
 
 .HowitWorksMsg{
 	margin: 1rem 0;
+	font-size: 1.4rem;
 
 }
 
 .EcotipsBox{
-	margin: 4rem 4rem;
+	margin: 6rem 6rem 4rem 4rem;
 	display:inline-block;
 	float: right;
+
 	min-height: 6rem;
-	max-width: 12rem;
-	border-top: green solid 6px;
-	border: green solid 3px;
+	max-width: 30%;
+	border: black solid 2px;
 	background-color: green;
 	color: #fff;
-	padding: 4rem;
+	padding: 1.4rem;
+	padding-top:2rem;
+	border-radius: 25px;
+
 
 
 }
 
 .EcotipsMsg{
 
+	background-color: #FFF;
+	color: #000;
+	padding: 2.6rem;
+	border-radius: 25px;
+	font-size: 1.3rem;
+	text-align: center;
 
 }
+.Ecotips{
+
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+
 
 
         
