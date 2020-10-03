@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import Container from "./pages/container/container-page";
 import "wired-elements";
 
-
 class App extends Component {
   render() {
     return (
@@ -12,10 +11,13 @@ class App extends Component {
         <div className="App">
           <div className="WidePageTemplate">
             <div className="SideBar">
-              <a href="/projects">
+              <a href="/">
                 <div className="ButtonLabel-lg">
-                  <p className="ProjectsNavButton"> Projects </p>
+                  <p className="ProjectsNavButton"> Home </p>
                 </div>
+              </a>
+              <a href="/projects">
+                <div className="ButtonLabel-md">Projects</div>
               </a>
               <a href="/parents">
                 <div className="ButtonLabel-md">Parents</div>

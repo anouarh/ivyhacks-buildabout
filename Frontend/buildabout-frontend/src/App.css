@@ -1,31 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-
 @font-face {
-    font-family: Rubrik-SemiBold;
-    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-SemiBold.woff);
+  font-family: Rubrik-SemiBold;
+  src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-SemiBold.woff);
 }
 
 @font-face {
-    font-family: Rubrik-Regular;
-    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Regular.woff);
+  font-family: Rubrik-Regular;
+  src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Regular.woff);
 }
 
 @font-face {
-    font-family: Rubrik-Light;
-    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Light.woff);
+  font-family: Rubrik-Light;
+  src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Light.woff);
 }
 
 @font-face {
-    font-family: Rubrik-Medium;
-    src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
+  font-family: Rubrik-Medium;
+  src: url(https://static.lapresse.ca/fonts/rubrik/Rubrik-Medium.woff);
 }
-
 
 * {
   margin: 0;
-  text-decoration:none;
+  text-decoration: none;
 }
-
 
 .App {
   background-image: url("images/background@2x.png");
@@ -39,67 +35,58 @@
   font-size: 15px;
 }
 
-.SideBar{
-    width: 16rem;
-    min-height: 30rem;
-    position: absolute;
-    left: -3%;
-    top: -2%;
-
-
+.SideBar {
+  width: 16rem;
+  min-height: 30rem;
+  position: absolute;
+  left: -3%;
+  top: -2%;
 }
 
-
-
-.ButtonLabel-lg{
-    width: 12rem;
-    min-height: 3rem;
-    background-image: url('images/Parentsbutton.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 2.5rem 0;
-    line-height: 1rem;
-    font: Rubrik-Semibold;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color:#000;
-
-
-
+.ButtonLabel-lg {
+  width: 12rem;
+  min-height: 3rem;
+  background-image: url("images/Parentsbutton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 2.5rem 0;
+  line-height: 1rem;
+  font: Rubrik-Semibold;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #000;
 }
 
-.ButtonLabel-md{
-    width: 6rem;
-    height: 1rem;
-    background-image: url('images/Parentsbutton.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 0.3rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 2.5rem 2rem;
-    font: Rubrik-Semibold;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color:#000;
-
-}    
-
-.ButtonLabel-sm{
-    height: 10rem;
-    background-image: url('images/HelpButton.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-    text-align: center;
-    margin-left: 0.7rem;
-    color:#000;
-
+.ButtonLabel-md {
+  width: 6rem;
+  height: 1rem;
+  background-image: url("images/Parentsbutton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 0.3rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 2.5rem 2rem;
+  font: Rubrik-Semibold;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
 }
 
- .WidePageTemplate {
+.ButtonLabel-sm {
+  height: 10rem;
+  background-image: url("images/HelpButton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: 0.7rem;
+  color: #000;
+}
+
+.WidePageTemplate {
   left: 3%;
   top: 5%;
   background-color: #fff;
@@ -117,10 +104,7 @@
   top: 6rem;
   position: relative;
   margin: 0 auto;
-
 }
-
-
 
 .MaterialPrompt {
   width: 50%;
@@ -145,6 +129,6 @@
   max-height: 100%;
 }
 
-.Home{
+.Home {
   padding: 4rem 4rem 4rem 12rem;
 }
