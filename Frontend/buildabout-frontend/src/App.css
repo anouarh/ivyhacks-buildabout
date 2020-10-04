@@ -11,7 +11,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  font-style: Rubrik-Regular;
+  font-family: Rubrik-Regular;
   font-size: 15px;
 }
 
@@ -50,8 +50,8 @@
   margin-bottom: 1rem;
   margin-left: 1rem;
   padding: 2.5rem 2rem;
-  font: Rubrik-Semibold;
-  font-size: 1.6rem;
+  font-family: Rubrik-Semibold;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #000;
   transition: all 0.3s ease-out;
@@ -131,7 +131,7 @@
 }
 
 .Home {
-  padding: 2rem 4rem 3rem 12rem;
+  padding: 2rem 4rem 3rem 10rem;
 }
 
 ::-webkit-scrollbar {

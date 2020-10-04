@@ -1,5 +1,47 @@
 .HelpInner{
 
 
-	padding: 4rem 4rem 4rem 12rem;
+	padding: 2rem 4rem 4rem 4rem;
+}
+
+.FaqTitle{
+
+	font-size: 2rem;
+
+	padding: 0 0 1rem 0rem;
+	border-bottom: black 1px solid;
+
+}
+
+.FaqQs{
+
+	margin: 2rem 0rem;
+	
+}
+
+.FaqQ{
+font-size: 1.6rem;
+font-family: Rubrik-Medium;
+
+
+}
+
+.FaqA{
+	font-family: Rubrik-Regular;
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin-bottom: 0.8rem;
+}
+
+.Contact{
+	font-size: 2rem;
+
+	padding: 0 0 1rem 0rem;
+
+
+}
+
+.ContactMsg{
+
+	font-size: 1.3rem;
 }

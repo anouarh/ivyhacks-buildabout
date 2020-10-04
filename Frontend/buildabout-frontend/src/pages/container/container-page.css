@@ -19,10 +19,12 @@
 }
 
 .Header {
+  margin: 0 auto;
   margin-bottom: 2rem;
   text-align: center;
   border-bottom: 2px black solid;
   padding-bottom: 1rem;
+
 }
 
 .Title {
@@ -40,9 +42,10 @@
   width: 6rem;
   height: 6rem;
   background-image: url("../../images/cartoontools@2x.png");
-  right: 3rem;
-  top: 0rem;
+  right: 4rem;
+  top: 2.4rem;
   z-index: 99;
   float: right;
   background-size: contain;
+  position: absolute;
 }
