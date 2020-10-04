@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./projects-page.css";
 import axios from "axios";
 import Item from "../../components/item/item-component";
+import ProComponent from "../../components/project-component/project-component";
 
 class Projects extends Component {
   state = {
@@ -10,12 +11,19 @@ class Projects extends Component {
     projects: [],
   };
 
+  getProjectsHandler = () => {
+    axios
+      .get("http://localhost:8080/projects/getAllProjects")
+      .then((response) => {
+        this.setState({ projects: response.data });
+      });
+  };
+
   componentDidMount() {
     axios
       .get("http://localhost:8080/materials/getAllMaterials")
       .then((response) => {
         this.setState({ materials: response.data });
-        console.log(response.data);
       });
 
     axios.get("http://localhost:8080/tools/getAllTools").then((response) => {
@@ -32,6 +40,10 @@ class Projects extends Component {
       return <Item name={tool.name} description={tool.description} />;
     });
 
+    const projects = this.state.projects.map((project) => {
+      return <ProComponent name={project.name} description={project.description} rating={project.rating} image={project.image} />;
+    });
+
     return (
       <div className="main">
         <div className="tools">
@@ -46,8 +58,10 @@ class Projects extends Component {
         </div>
         <div className="toolbox">
           <h3>Your ToolBox</h3>
-          {/* <div className="generate-button">Generate</div> */}
-          <wired-button elevation="2">Generate</wired-button>
+          {projects}
+          <wired-button onClick={this.getProjectsHandler} elevation="2">
+            Generate
+          </wired-button>
         </div>
       </div>
     );

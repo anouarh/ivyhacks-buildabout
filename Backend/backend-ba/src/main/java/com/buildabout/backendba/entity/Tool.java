@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +17,8 @@ public class Tool {
     private String name;
 
     private String description;
+
+    private String image;
 
     @Enumerated(EnumType.STRING)
     private Type type;
@@ -33,9 +34,10 @@ public class Tool {
     public Tool() {
     }
 
-    public Tool(String name, String description, Type type) {
+    public Tool(String name, String description, String image, Type type) {
         this.name = name;
         this.description = description;
+        this.image = image;
         this.type = type;
     }
 
@@ -77,5 +79,13 @@ public class Tool {
 
     public void setProjects(Set<Project> projects) {
         this.projects = projects;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
