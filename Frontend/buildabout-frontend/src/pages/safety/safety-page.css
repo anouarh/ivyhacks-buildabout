@@ -1,0 +1,17 @@
+.safety-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.safety-main wired-card {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.safety-main wired-card wired-button {
+    margin: 10px;
+}
