@@ -1,0 +1,17 @@
+.playdate-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playdate-main wired-card {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.playdate-main wired-card wired-button {
+    margin: 10px;
+}

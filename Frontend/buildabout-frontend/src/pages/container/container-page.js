@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import "./container-page.css";
 import { Route } from "react-router-dom";
 import Projects from "../projects/projects-page";
-import Safety from "../safety/safety-page";
 import Help from "../help/help-page";
 import Parents from "../parents/parents-page";
 import Home from "../home/home-page";
-import Account from "../account/account-page";
 import Watching from "../watching/watching-page";
+import PlayDate from "../playdate/playdate-page";
 
 class Container extends Component {
   render() {
@@ -25,8 +24,7 @@ class Container extends Component {
         <Route path="/" exact component={Home} />
         <Route path="/watching-experiments" exact component={Watching} />
         <Route path="/projects" exact component={Projects} />
-        <Route path="/account" exact component={Account} />
-        <Route path="/safety" exact component={Safety} />
+        <Route path="/playdate" exact component={PlayDate} />
         <Route path="/help" exact component={Help} />
         <Route path="/parents" exact component={Parents} />
       </div>

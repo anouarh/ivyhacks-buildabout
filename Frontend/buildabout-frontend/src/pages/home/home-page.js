@@ -36,7 +36,7 @@ class Home extends Component {
           <div className="activity-card green">
             <h1>Play Date</h1>
             <h4 className="faded">Build projects with others.</h4>
-            <a href="/">
+            <a href="/playdate">
               <wired-button elevation="2">Start a play date</wired-button>
             </a>
           </div>

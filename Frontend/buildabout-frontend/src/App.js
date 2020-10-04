@@ -22,11 +22,11 @@ class App extends Component {
               <a href="/parents">
                 <div className="ButtonLabel-md">Parents</div>
               </a>
-              <a href="/safety">
-                <div className="ButtonLabel-md">Safety</div>
+              <a href="/watching-experiments">
+                <div className="ButtonLabel-md">Watch</div>
               </a>
-              <a href="/account">
-                <div className="ButtonLabel-md">Account</div>
+              <a href="/playdate">
+                <div className="ButtonLabel-md">PlayDate</div>
               </a>
               <a href="/help">
                 <div className="ButtonLabel-sm"></div>
