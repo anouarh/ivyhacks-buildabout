@@ -28,6 +28,9 @@ class App extends Component {
               <a href="/playdate">
                 <div className="ButtonLabel-md">PlayDate</div>
               </a>
+               <a href="/account">
+                <div className="ButtonLabel-md">Account</div>
+              </a>
               <a href="/help">
                 <div className="ButtonLabel-sm"></div>
               </a>
