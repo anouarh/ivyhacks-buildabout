@@ -7,6 +7,7 @@ import Help from "../help/help-page";
 import Parents from "../parents/parents-page";
 import Home from "../home/home-page";
 import Account from "../account/account-page";
+import Watching from "../watching/watching-page";
 
 class Container extends Component {
   render() {
@@ -22,6 +23,7 @@ class Container extends Component {
         </div>
 
         <Route path="/" exact component={Home} />
+        <Route path="/watching-experiments" exact component={Watching} />
         <Route path="/projects" exact component={Projects} />
         <Route path="/account" exact component={Account} />
         <Route path="/safety" exact component={Safety} />

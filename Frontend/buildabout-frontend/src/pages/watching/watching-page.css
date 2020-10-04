@@ -1,0 +1,10 @@
+.watching-main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.watching-main wired-video {
+    margin: 10px;
+}
