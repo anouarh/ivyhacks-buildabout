@@ -3,7 +3,7 @@ import "./parents-page.css";
 
 function ValueButtons() {
   return (
-    <div className="ValueButtons">
+    <div className="value-buttons">
       <div className="ValueButton-Resourcefulness">
         <p className="Resourcefulness">Resourcefulness</p>
       </div>
@@ -92,7 +92,9 @@ function Parents() {
   return (
     <div className="ParentsInner">
       <ParentsHeaderMessage></ParentsHeaderMessage>
-      <ValueButtons> </ValueButtons>
+      <div className="value-buttons">
+        <ValueButtons> </ValueButtons>
+      </div>
       <div className="row">
         <HowitWorks></HowitWorks>
         <Ecotips></Ecotips>
