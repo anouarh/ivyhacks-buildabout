@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./home-page.css";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 class Home extends Component {
   render() {
@@ -13,7 +14,9 @@ class Home extends Component {
             </h4>
             <div className="button-container">
               <a href="/projects">
-                <wired-button elevation="2">Go To Projects</wired-button>
+              <wired-icon-button elevation="2">
+                  <ArrowForwardIcon></ArrowForwardIcon>
+                </wired-icon-button>
               </a>
             </div>
           </div>
@@ -23,7 +26,9 @@ class Home extends Component {
             <h4 className="faded">Watch all kinds of science experiments.</h4>
             <div className="button-container">
               <a href="/watching-experiments">
-                <wired-button elevation="2">Watch Videos</wired-button>
+                <wired-icon-button elevation="2">
+                  <ArrowForwardIcon></ArrowForwardIcon>
+                </wired-icon-button>
               </a>
             </div>
           </div>
@@ -34,7 +39,9 @@ class Home extends Component {
             <h4 className="faded">Try to build other people's projects.</h4>
             <div className="button-container">
               <a href="/">
-                <wired-button elevation="2">Bill Nye and more</wired-button>
+              <wired-icon-button elevation="2">
+                  <ArrowForwardIcon></ArrowForwardIcon>
+                </wired-icon-button>
               </a>
             </div>
           </div>
@@ -44,7 +51,9 @@ class Home extends Component {
             <h4 className="faded">Build projects with others.</h4>
             <div className="button-container">
               <a href="/playdate">
-                <wired-button elevation="2">Start a play date</wired-button>
+              <wired-icon-button elevation="2">
+                  <ArrowForwardIcon></ArrowForwardIcon>
+                </wired-icon-button>
               </a>
             </div>
           </div>

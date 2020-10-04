@@ -6,5 +6,15 @@
 wired-card wired-button {
     flex: 1;
     position: relative;
-    right: 0px;;
+    right: 0px;
+    border-color: red;
+}
+
+.item .item-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.item .space {
+    flex: 2;
 }

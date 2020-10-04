@@ -10,8 +10,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
-.playdate-main wired-card wired-button {
-    margin: 10px;
+.playdate-main wired-card wired-icon-button {
+  margin: 10px;
 }

@@ -3,6 +3,7 @@ import "./projects-page.css";
 import axios from "axios";
 import Item from "../../components/item/item-component";
 import ProComponent from "../../components/project-component/project-component";
+import AutorenewIcon from "@material-ui/icons/Autorenew";
 
 class Projects extends Component {
   state = {
@@ -41,7 +42,14 @@ class Projects extends Component {
     });
 
     const projects = this.state.projects.map((project) => {
-      return <ProComponent name={project.name} description={project.description} rating={project.rating} image={project.image} />;
+      return (
+        <ProComponent
+          name={project.name}
+          description={project.description}
+          rating={project.rating}
+          image={project.image}
+        />
+      );
     });
 
     return (
@@ -57,10 +65,12 @@ class Projects extends Component {
           {tools}
         </div>
         <div className="toolbox">
-          <h3>Your ToolBox</h3>
           {projects}
           <wired-button onClick={this.getProjectsHandler} elevation="2">
-            Generate
+            <div className="generate-button-d">
+              <AutorenewIcon></AutorenewIcon>
+              Generate
+            </div>
           </wired-button>
         </div>
       </div>

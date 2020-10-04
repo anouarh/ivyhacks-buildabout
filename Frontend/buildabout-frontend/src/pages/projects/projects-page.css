@@ -61,3 +61,9 @@
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
     0 24px 46px var(rgba(255, 215, 97, 0.48));
 }
+
+.generate-button-d {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

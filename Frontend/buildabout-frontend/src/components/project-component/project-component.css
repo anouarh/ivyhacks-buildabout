@@ -1,6 +1,7 @@
-.item wired-card {
+.item-project wired-card {
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
 
 wired-card wired-button {
@@ -9,7 +10,7 @@ wired-card wired-button {
   right: 0px;
 }
 
-.item .image img {
+.item-project .image img {
   position: absolute;
   top: -9450px;
   left: -9999px;
@@ -18,11 +19,17 @@ wired-card wired-button {
   margin: auto;
 }
 
-.item .image {
+.item-project .image {
   flex: 1;
   position: relative;
   width: 100%;
   height: 250px;
   overflow: hidden;
   border: 1px solid black;
+}
+
+.item-project .actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
