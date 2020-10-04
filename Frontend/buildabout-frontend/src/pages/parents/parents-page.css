@@ -19,7 +19,7 @@
 .value-buttons {
   display: flex;
   flex-direction: row;
-  margin: 3rem auto;
+  margin: 2rem auto;
   font-weight: 600;
   font-size: 2.4rem;
 }
@@ -31,7 +31,7 @@
   border-radius: 30px;
   border: 3px solid black;
   flex: 1;
-  margin: 10px;
+  margin: 0 0.8rem;
 }
 
 .ValueButton-Responsibility {
@@ -41,7 +41,7 @@
   border-radius: 30px;
   border: 3px solid black;
   flex: 1;
-  margin: 0.8rem;
+  margin: 0 0.8rem;
 }
 
 .ValueButton-Independance {
@@ -51,7 +51,7 @@
   border-radius: 30px;
   border: 3px solid black;
   flex: 1;
-  margin: 10px;
+  margin: 0 0.8rem;
 }
 
 .HowitWorks {
